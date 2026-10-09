@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrafficAI | Probabilistic Traffic Prediction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand"><span class="logo">◉</span> Traffic<span>AI</span></div>
+    <div class="navlinks">
+      <a class="active" href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="model.html">Model</a>
+      <a href="about.html">About</a>
+    </div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">AI • PROBABILISTIC REASONING • SMART CITIES</div>
+        <h1>Predict traffic before<br><span>congestion happens.</span></h1>
+        <p>TrafficAI uses probabilistic reasoning to estimate future traffic conditions from historical patterns,
+          weather, time, vehicle density, and road conditions.</p>
+        <div class="actions">
+          <a class="btn primary" href="dashboard.html">Open Dashboard →</a>
+          <a class="btn secondary" href="model.html">Explore Model</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span>LIVE PREDICTION</span><span class="live-dot">●</span></div>
+        <div class="road-visual">
+          <div class="road-line"></div>
+          <div class="car c1">🚗</div>
+          <div class="car c2">🚙</div>
+          <div class="car c3">🚌</div>
+        </div>
+        <div class="prediction-row">
+          <div><small>Next 30 min</small><strong>Moderate</strong></div>
+          <div class="confidence"><b>82%</b><small>confidence</small></div>
+        </div>
+        <div class="probbar"><span style="width:82%"></span></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong>92%</strong><span>Prediction confidence</span></div>
+      <div class="stat"><strong>24/7</strong><span>Monitoring capability</span></div>
+      <div class="stat"><strong>5+</strong><span>Prediction factors</span></div>
+      <div class="stat"><strong>30m</strong><span>Forecast horizon</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">HOW IT WORKS</div>
+          <h2>From traffic data to intelligent prediction</h2>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01</b>
+          <h3>Collect</h3>
+          <p>Gather vehicle count, speed, weather, time and road-condition data.</p>
+        </div>
+        <div class="step"><b>02</b>
+          <h3>Reason</h3>
+          <p>Calculate probabilities using conditional relationships between traffic factors.</p>
+        </div>
+        <div class="step"><b>03</b>
+          <h3>Predict</h3>
+          <p>Estimate the most likely congestion state and confidence level.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 TrafficAI • Probabilistic Reasoning System for Traffic Prediction</footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Analysis | TrafficAI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand"><span class="logo">◉</span> Traffic<span>AI</span></div>
+        <div class="navlinks"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a class="active"
+                href="analysis.html">Analysis</a><a href="model.html">Model</a><a href="about.html">About</a></div>
+        <button class="menu" onclick="toggleMenu()">☰</button>
+    </nav>
+    <main class="page">
+        <div class="page-title">
+            <div>
+                <div class="eyebrow">DATA INSIGHTS</div>
+                <h1>Traffic Analysis</h1>
+                <p>Understand the factors that influence congestion probability.</p>
+            </div>
+        </div>
+        <div class="analysis-grid">
+            <div class="big-card">
+                <div class="card-top"><span>HOURLY TRAFFIC VOLUME</span><span class="muted">VEHICLES / HOUR</span></div>
+                <div class="columns">
+                    <div style="height:30%"><b>6</b><small>06:00</small></div>
+                    <div style="height:42%"><b>8</b><small>08:00</small></div>
+                    <div style="height:64%"><b>12</b><small>10:00</small></div>
+                    <div style="height:51%"><b>10</b><small>12:00</small></div>
+                    <div style="height:70%"><b>14</b><small>14:00</small></div>
+                    <div style="height:86%"><b>17</b><small>16:00</small></div>
+                    <div style="height:94%"><b>19</b><small>18:00</small></div>
+                    <div style="height:58%"><b>11</b><small>20:00</small></div>
+                </div>
+            </div>
+            <div class="big-card">
+                <div class="card-top"><span>KEY FACTORS</span><span>IMPACT</span></div>
+                <div class="factor"><span>Vehicle density</span><b>0.88</b><i><span style="width:88%"></span></i></div>
+                <div class="factor"><span>Time of day</span><b>0.81</b><i><span style="width:81%"></span></i></div>
+                <div class="factor"><span>Average speed</span><b>0.74</b><i><span style="width:74%"></span></i></div>
+                <div class="factor"><span>Weather</span><b>0.36</b><i><span style="width:36%"></span></i></div>
+                <div class="factor"><span>Road condition</span><b>0.29</b><i><span style="width:29%"></span></i></div>
+            </div>
+        </div>
+
+        <div class="big-card table-card">
+            <div class="card-top"><span>RECENT OBSERVATIONS</span><span class="muted">SAMPLE DATA</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Vehicles</th>
+                        <th>Speed</th>
+                        <th>Traffic</th>
+                        <th>Probability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00</td>
+                        <td>842</td>
+                        <td>42 km/h</td>
+                        <td><span class="pill low">Low</span></td>
+                        <td>76%</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>1,245</td>
+                        <td>36 km/h</td>
+                        <td><span class="pill moderate">Moderate</span></td>
+                        <td>81%</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>1,670</td>
+                        <td>29 km/h</td>
+                        <td><span class="pill high">High</span></td>
+                        <td>88%</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                        <td>1,920</td>
+                        <td>21 km/h</td>
+                        <td><span class="pill severe">Severe</span></td>
+                        <td>93%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>TrafficAI Analysis • Historical and simulated insights</footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

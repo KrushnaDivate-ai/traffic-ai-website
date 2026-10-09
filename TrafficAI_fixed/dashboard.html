@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | TrafficAI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand"><span class="logo">◉</span> Traffic<span>AI</span></div>
+        <div class="navlinks"><a href="index.html">Home</a><a class="active" href="dashboard.html">Dashboard</a><a
+                href="analysis.html">Analysis</a><a href="model.html">Model</a><a href="about.html">About</a></div>
+        <button class="menu" onclick="toggleMenu()">☰</button>
+    </nav>
+    <main class="page">
+        <div class="page-title">
+            <div>
+                <div class="eyebrow">REAL-TIME SIMULATION</div>
+                <h1>Prediction Dashboard</h1>
+                <p>Monitor current conditions and probabilistic forecasts.</p>
+            </div>
+            <select id="roadSelect" onchange="updateDashboard()">
+                <option>Main Road</option>
+                <option>City Center</option>
+                <option>Airport Road</option>
+                <option>Highway Junction</option>
+            </select>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="big-card">
+                <div class="card-top"><span>CURRENT TRAFFIC STATE</span><span class="status moderate"
+                        id="status">MODERATE</span></div>
+                <div class="gauge">
+                    <div class="gauge-inner"><strong id="score">64</strong><span>/ 100</span><small>traffic
+                            index</small></div>
+                </div>
+                <div class="prediction-row">
+                    <div><small>Predicted in 30 min</small><strong id="forecast">High</strong></div>
+                    <div><small>Confidence</small><strong id="confidence">82%</strong></div>
+                </div>
+            </div>
+            <div class="big-card">
+                <div class="card-top"><span>PROBABILITY DISTRIBUTION</span><span>30 MIN</span></div>
+                <div class="bars">
+                    <div><label>Low <b>12%</b></label><i><span style="width:12%"></span></i></div>
+                    <div><label>Moderate <b>31%</b></label><i><span style="width:31%"></span></i></div>
+                    <div><label>High <b>45%</b></label><i><span style="width:45%"></span></i></div>
+                    <div><label>Severe <b>12%</b></label><i><span style="width:12%"></span></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-3">
+            <div class="metric"><span>🚗 Vehicle Density</span><strong>78%</strong><small>+8% vs last hour</small></div>
+            <div class="metric"><span>⚡ Average Speed</span><strong>32 km/h</strong><small>-12% vs normal</small></div>
+            <div class="metric"><span>🌧 Weather Factor</span><strong>0.24</strong><small>Low impact</small></div>
+        </div>
+
+        <div class="big-card chart-card">
+            <div class="card-top"><span>TRAFFIC INDEX — NEXT 6 HOURS</span><span class="muted">SIMULATED DATA</span>
+            </div>
+            <div class="chart">
+                <div class="gridline g1"></div>
+                <div class="gridline g2"></div>
+                <div class="gridline g3"></div>
+                <svg viewBox="0 0 900 280" preserveAspectRatio="none">
+                    <polyline points="0,210 90,190 180,205 270,150 360,135 450,165 540,105 630,125 720,72 810,95 900,55"
+                        fill="none" stroke="currentColor" stroke-width="5" />
+                    <polyline
+                        points="0,240 90,220 180,225 270,190 360,175 450,200 540,150 630,165 720,115 810,135 900,90"
+                        fill="none" stroke="currentColor" stroke-width="2" opacity=".35" />
+                </svg>
+                <div class="xlabels">
+                    <span>Now</span><span>+1h</span><span>+2h</span><span>+3h</span><span>+4h</span><span>+5h</span><span>+6h</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>TrafficAI Dashboard • Demo prediction data</footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
